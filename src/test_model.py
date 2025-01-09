@@ -1,6 +1,7 @@
 import pickle
 import pandas as pd
 
+
 def test_model():
     with open('model/house_price_model.pkl', 'rb') as file:
         model = pickle.load(file)
