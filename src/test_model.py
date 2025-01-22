@@ -4,7 +4,7 @@ import pandas as pd
 
 def test_model():
     with open('model/house_price_model.pkl', 'rb') as file:
-        model = pickle.load(file)   
+        model = pickle.load(file)
     new_house_data = [[3, 2.0, 1.0, 2000]]  # Example: 3 bedrooms, 2 bathrooms, 1 floor, built in 2000
     new_house_df = pd.DataFrame(new_house_data, columns=['bedrooms', 'bathrooms', 'floors', 'yr_built'])
     predicted_price = model.predict(new_house_df)
