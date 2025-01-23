@@ -14,5 +14,6 @@ def train_model():
     with open('model/house_price_model.pkl', 'wb') as file:
         pickle.dump(model, file)
 
+
 if __name__ == "__main__":
     train_model()
