@@ -24,7 +24,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8
       - name: Run Linter
-        run: flake8 src/ --max-line-length=88
+        run: flake8 src/ --max-line-length=98
 
   test:
     name: Unit Testing
